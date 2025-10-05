@@ -67,7 +67,7 @@ export default function Home() {
           <div className="links mob:py-3 flex justify-center items-center space-x-5">
 
   
-
+        </div>
           </div>
         </div>
       </nav>
