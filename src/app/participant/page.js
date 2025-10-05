@@ -2,7 +2,7 @@
 import { useSearchParams, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+// Image import removed as requested
 
 export default function ParticipantDetail() {
   const searchParams = useSearchParams()
@@ -90,9 +90,8 @@ export default function ParticipantDetail() {
           <p className=''>Google Cloud Study Jams 25 - 26</p>
         </div>
         <div className="p-3 flex mob:flex-col m-auto max-w-6xl justify-between items-center">
+          {/* CORRECTED: Removed Image placeholder and fixed structure */}
           <div className="logo mob:border-b mob:border-b-gray-200 flex justify-center items-center">
-            <div className="img w-16 h-1w-16 rounded-full ">
-            
             <div className="text flex flex-col justify-start items-start">
               <p className="text-base">Google Developer Group On Campus</p>
               <p className="text-xs">Vivekananda College of Arts Science and Commerce(Autonomous), Puttur</p>
@@ -263,4 +262,3 @@ export default function ParticipantDetail() {
     </div>
   )
 }
-
