@@ -2,7 +2,6 @@
 import { useSearchParams, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-// Image import removed as requested
 
 export default function ParticipantDetail() {
   const searchParams = useSearchParams()
@@ -89,15 +88,15 @@ export default function ParticipantDetail() {
         <div className="bg-gray-900 text-blue-500 w-full m-auto text-center p-2 flex justify-center items-center">
           <p className=''>Google Cloud Study Jams 25 - 26</p>
         </div>
-        <div className="p-3 flex mob:flex-col m-auto max-w-6xl justify-between items-center">
-          {/* CORRECTED: Removed Image placeholder and fixed structure */}
-          <div className="logo mob:border-b mob:border-b-gray-200 flex justify-center items-center">
+        {/* Changed mob: to sm: to resolve potential React/Next.js prop interpretation error */}
+        <div className="p-3 flex sm:flex-col m-auto max-w-6xl justify-between items-center">
+          <div className="logo sm:border-b sm:border-b-gray-200 flex justify-center items-center">
             <div className="text flex flex-col justify-start items-start">
               <p className="text-base">Google Developer Group On Campus</p>
               <p className="text-xs">Vivekananda College of Arts Science and Commerce(Autonomous), Puttur</p>
             </div>
           </div>
-          <div className="links mob:py-3">
+          <div className="links sm:py-3">
             <Link 
               href="/"
               className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
@@ -112,10 +111,11 @@ export default function ParticipantDetail() {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto p-6 mob:p-3">
+      <div className="max-w-6xl mx-auto p-6 sm:p-3">
         {/* Participant Info Card */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-6">
-          <div className="flex items-start justify-between mob:flex-col">
+          {/* Changed mob: to sm: */}
+          <div className="flex items-start justify-between sm:flex-col">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-4">
                 <h1 className="text-4xl font-bold text-gray-800 uppercase">
