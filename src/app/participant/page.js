@@ -87,14 +87,14 @@ export default function ParticipantDetail() {
       {/* Header */}
       <nav className='w-full shadow-md bg-white'>
         <div className="bg-gray-900 text-blue-500 w-full m-auto text-center p-2 flex justify-center items-center">
-          <div className=""><Image src="C:\SACHIN UPPARNA\GDGoC\cloud campaign\CloudJamLeaderboard-main\CloudJamLeaderboard-main\public\assets\gdscfavi.png" alt="cloud" width="40" height="40" /></div>
+          // <div className=""><Image src="C:\SACHIN UPPARNA\GDGoC\cloud campaign\CloudJamLeaderboard-main\CloudJamLeaderboard-main\public\assets\gdscfavi.png" alt="cloud" width="40" height="40" /></div>
           <p className=''>Google Cloud Study Jams 25 - 26</p>
         </div>
         <div className="p-3 flex mob:flex-col m-auto max-w-6xl justify-between items-center">
           <div className="logo mob:border-b mob:border-b-gray-200 flex justify-center items-center">
             <div className="img w-16 h-1w-16 rounded-full ">
-              <Image src="C:\SACHIN UPPARNA\GDGoC\cloud campaign\CloudJamLeaderboard-main\CloudJamLeaderboard-main\public\assets\gdscfavi.png" alt="gdsc" width="64" height="64" />
-            </div>
+            //   <Image src="C:\SACHIN UPPARNA\GDGoC\cloud campaign\CloudJamLeaderboard-main\CloudJamLeaderboard-main\public\assets\gdscfavi.png" alt="gdsc" width="64" height="64" />
+            // </div>
             <div className="text flex flex-col justify-start items-start">
               <p className="text-base">Google Developer Group On Campus</p>
               <p className="text-xs">Vivekananda College of Arts Science and Commerce(Autonomous), Puttur</p>
